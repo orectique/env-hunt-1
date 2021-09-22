@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<h1>ENV Treasure Hunt</h1>
-<p>Who lives in a pineapple under the sea?</p>
+<body style="text-align:center;">
+	<h1 style="color:rgb(0, 0, 0);">
+		The Sustainable Quest
+		</h1>
 
+	<h2>
+        Rarus enim ferme sensus communis in illa Fortuna.
+</h2>
+
+	<p>
+	Enter your passkey in the text field and click the button.
+</p>
+
+	Passkey:
+	<input type="text"
+		id="myText"
+		value="sic semper tyrannis">
+
+	<button type="button"
+			onclick="myFunction()">
+	Check
+</button>
+
+	<p id="output"></p>
+
+	<script>
+		// Here the value is stored in new variable x
+
+		function myFunction() {
+			var x =
+				document.getElementById("myText").value;
+            var y = "Awesom3o"
+			var error = "You have chosen poorly."
+            var answer = "You have chosen wisely. Who lives in a pineapple under the sea?"
+
+            if (x == y){
+                document.getElementById("output").innerHTML = answer;
+            }
+
+            else{
+                document.getElementById("output").innerHTML = error;
+            }
+		}
+	</script>
 </body>
+
 </html>
