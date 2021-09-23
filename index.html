@@ -30,11 +30,11 @@
 		// Here the value is stored in new variable x
 
 		function myFunction() {
-			var x =
-				document.getElementById("myText").value;
-            var y = "Awesom3o"
-			var error = "You have chosen poorly."
-            var answer = "You have chosen wisely. Who lives in a pineapple under the sea?"
+			var x =	document.getElementById("myText").value;
+			x = x.toLowerCase();
+            var y = "awesom3o";
+			var error = "You have chosen poorly.";
+            var answer = "You have chosen wisely. Who lives in a pineapple under the sea?";
 
             if (x == y){
                 document.getElementById("output").innerHTML = answer;
